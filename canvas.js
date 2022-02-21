@@ -1,6 +1,11 @@
-$(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
+
+// Get Canvas
+    var canvas = document.querySelector("canvas");
+
+    var context2d = canvas.getContext("2d");
+
+    
+canvas.sca(0.5,0.5);
 
 var seed = 2;
 
@@ -16,10 +21,6 @@ function paintCanvas() {
         return;
     }
     
-    // Get Canvas
-    var canvas = document.querySelector("canvas");
-
-    var context2d = canvas.getContext("2d");
 
     height = canvas.height;
     width = canvas.width;
@@ -49,7 +50,6 @@ function paintCanvas() {
         context2d.stroke();
     }
     seed = 1;
-
 }
 
 
