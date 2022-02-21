@@ -42,10 +42,8 @@ function paintCanvas() {
         context2d.beginPath();
         context2d.moveTo(getRandomInt(width), getRandomInt(height));
         context2d.bezierCurveTo(
-            //width/2 + getRandomInt(100) - 50, height/2 + getRandomInt(50)- 50,
-            //width/2 + getRandomInt(100)- 50, height/2 + getRandomInt(50)- 50,
-            100,300,
-            200,0,
+            width/2 + getRandomInt(100) - 50, height/2 + getRandomInt(50)- 50,
+            width/2 + getRandomInt(100)- 50, height/2 + getRandomInt(50)- 50,
             getRandomInt(width), getRandomInt(height));
         context2d.stroke();
     }
