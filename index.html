@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Test</title>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        canvas {
+            border: 5px solid white;
+            background-color: grey;
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+
+        .outer-limit {
+            max-width: 720pt;
+        }
+        .canvas-card-limit{
+            max-width: 800px;
+            max-height: 800px;
+            margin: 0;
+            padding: 0;
+        }
+        .top-padding{
+            padding-top: 40pt;
+        }
+        .top-margin{
+            margin-top: 40pt;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue-grey">
+          <a href="#" class="brand-logo center" >Quantum Wormhole</a>
+        </div>
+      </nav>
+    <center>
+        <div class="card-panel outer-limit z-depth-3 top-padding top-margin" >
+            <span max-width="200px">
+                    <canvas height="720px" width="720px" class="z-depth-2"></canvas>
+                <p>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="nameInput" type="text" class="validate">
+                        <label for="nameInput">Full Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="date" id="birthdayInput" name="trip-start" >
+                          
+                        <label for="birthdayInput">Birthday</label>
+                    </div>
+                </div>
+                </p>
+                <p>
+                    <a class="waves-effect waves-light btn" onclick="paintCanvas()">Get</a>
+                </p>
+            </span>
+        </div>
+    </center>
+    <script type="text/javascript" src="canvas.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
