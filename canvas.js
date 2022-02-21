@@ -4,10 +4,8 @@
 
     var context2d = canvas.getContext("2d");
 
-    
-canvas.sca(0.5,0.5);
 
-var seed = 2;
+var seed = 1;
 
 function paintCanvas() {
 
