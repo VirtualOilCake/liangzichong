@@ -9,7 +9,7 @@ var seed = 1;
 
 function paintCanvas() {
 
-    var nameInput = document.getElementById("nameInput");
+    let nameInput = document.getElementById("nameInput");
     var birthInput = document.getElementById("birthdayInput");
 
     //console.log(birthInput.valueAsNumber);
@@ -25,8 +25,6 @@ function paintCanvas() {
 
     context2d.fillStyle = "black";
     context2d.fillRect(0, 0, width, height);
-
-    
 
     var fullValue=nameInput.value+birthInput.valueAsNumber;
 
