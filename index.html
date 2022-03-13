@@ -6,9 +6,9 @@
     <title>Canvas Test</title>
 
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
         canvas {
             border: 5px solid white;
@@ -22,19 +22,23 @@
         .outer-limit {
             max-width: 720pt;
         }
-        .canvas-card-limit{
+
+        .canvas-card-limit {
             max-width: 800px;
             max-height: 800px;
             margin: 0;
             padding: 0;
         }
-        .top-padding{
+
+        .top-padding {
             padding-top: 40pt;
         }
-        .top-margin{
+
+        .top-margin {
             margin-top: 40pt;
         }
-        .canvas-size{
+
+        .canvas-size {
             max-width: 1024px;
             max-height: 1024px;
             min-width: 100px;
@@ -46,14 +50,14 @@
 </head>
 
 <body>
-    
-    <center>
-        <nav>
-            <div class="nav-wrapper blue-grey large ">
-                    <a href="#" class="nav-content " style="font-size: 20pt;">Quantum Wormhole</a>
-            </div>
-          </nav>
-        <div class="card-panel outer-limit z-depth-3 top-margin" style="align-self: center;" >
+
+<center>
+    <nav>
+        <div class="nav-wrapper blue-grey large ">
+            <a href="#" class="nav-content " style="font-size: 20pt;">Quantum Wormhole</a>
+        </div>
+    </nav>
+    <div class="card-panel outer-limit z-depth-3 top-margin" style="align-self: center;">
             <span max-width="200px">
                 <p>
                     <canvas class="z-depth-2 canvas-size"></canvas>
@@ -66,7 +70,7 @@
                         <label for="nameInput">Full Name</label>
                     </div>
                     <div class="input-field col s6">
-                        <input type="date" id="birthdayInput" value="2009-09-09" name="birthday" >
+                        <input type="date" id="birthdayInput" value="2009-09-09" name="birthday">
                         <label for="birthdayInput">Birthday</label>
                     </div>
                 </div>
@@ -75,13 +79,13 @@
                     <a class="waves-effect waves-light btn-large" onclick="paintCanvas()">Get</a>
                 </p>
             </span>
-        </div>
-    </center>
-        
-    
-    <script type="text/javascript" src="canvas.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    </div>
+</center>
+
+
+<script type="text/javascript" src="canvas.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 
 </html>
